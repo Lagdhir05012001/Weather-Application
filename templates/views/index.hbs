@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Weather</title>
+    <link rel="icon" href="/img/weather.jpeg">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    {{!-- <h1>Weather (index.hbs)</h1> --}}
+    <div class="main-content">
+        {{>header}}
+        <p>Use this site to get your Weather!</p>
+        <form>
+            <input placeholder="Location">
+            <button>Search</button>
+        </form>
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+    </div>
+    {{!-- <p><b>Created By :</b> {{name}}</p> --}}
+    <!-- <h1>From A Static File (index.html)</h1> -->
+
+    {{!-- <label>Enter The Name:</label>
+    <input type="text" id="myname" value=""><br>
+    <button type="button" onclick="myFunction()" style="width: 80px; height: 20px;">Click Here</button><br>
+    Name : <label id="demo"></label> --}}
+    {{>footer}}
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
